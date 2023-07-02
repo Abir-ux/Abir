@@ -1,0 +1,297 @@
+
+.body {
+    margin: 0;
+    padding: 0;
+    /* background: #333333; */
+    background: rgba(0, 0, 0, 0.847);
+    font-family: sans-serif;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+  }
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .cube {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  
+  #top {
+    /* background: #ffbf00; */
+    background-image: url(images/code.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  #content {
+    background: black;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC - PC */
+@media screen and (min-width: 1200px) {
+
+    
+.header-part{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.header-part-1{
+    position: relative;
+    left: 20%;
+
+}
+.header-part-2{
+    color: white;
+    width: 500px;
+    position: relative;
+    top: 30%;
+}
+.header-part-my-name-part-1{
+    font-size: 28px;
+    font-weight: 600;
+}
+.header-part-my-name-part-2{
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.header-part-my-short-bio{
+    font-size: 16px;
+    font-weight: 400;
+    color: whitesmoke;
+    line-height: 28px;
+    word-spacing: 1px;
+    text-align: justify;
+}
+.header-part-my-btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px 40px;
+    transition: 0.2s;
+}
+.header-part-my-btn:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+} 
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE - PHONE */
+@media screen and (max-width: 1200px) {
+    .header-part{
+
+    }
+    .my-photo{
+        width: 300px;
+    }
+    .header-part-1{
+        position: relative;
+        left: 20%;
+        align-items: center;
+    }
+    .header-part-2{
+        color: white;
+        width: 500px;
+        position: relative;
+        top: 30%;
+        
+    }
+    .header-part-my-name-part-1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .header-part-my-name-part-2{
+        font-size: 30px;
+        font-weight: 700;
+        
+    }
+    .header-part-my-short-bio{
+        font-size: 16px;
+        font-weight: 400;
+        color: whitesmoke;
+        line-height: 28px;
+        word-spacing: 1px;
+        text-align: justify;
+    }
+    .header-part-my-btn{
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        background-color: black;
+        border: 2px solid white;
+        border-radius: 30px;
+        padding: 15px 40px;
+        transition: 0.2s;
+    }
+    .header-part-my-btn:hover{
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    } 
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+ul li{
+    position: relative;
+    list-style: none;
+}
+ul li a{
+    position: relative;
+    font-size: 4em;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+ul li a::before{
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+}
